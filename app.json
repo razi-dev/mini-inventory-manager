@@ -20,8 +20,13 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.razi95.miniinventorymanager"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "654fdda8-b8b0-484b-b44f-182fbfb9456f"
+      }
     }
-
   }
 }

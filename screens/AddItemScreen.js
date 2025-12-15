@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import CustomInput from '../components/CustomInput';
 import CustomButton from '../components/CustomButton';
+import CustomDropdown from '../components/CustomDropdown';
 import { addItem } from '../services/storageService';
 
 const AddItemScreen = ({ navigation }) => {
@@ -98,14 +99,13 @@ const AddItemScreen = ({ navigation }) => {
                     error={errors.quantity}
                 />
 
-                <CustomInput
+                <CustomDropdown
                     label="Category *"
                     value={category}
-                    onChangeText={(text) => {
-                        setCategory(text);
+                    onValueChange={(value) => {
+                        setCategory(value);
                         if (errors.category) setErrors({ ...errors, category: '' });
                     }}
-                    placeholder="e.g., Electronics, Furniture, Stationery"
                     error={errors.category}
                 />
 
